@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand navbar-light bg-gradient-warning text-black">
+    <!-- Brand -->
+    <a class="navbar-brand" href="{{ path('app_main') }}">
+        <i class="fas fa-home"></i>
+        <span class="text-bold mx-3">Admin</span>
+    </a>
+
+    <!-- Navbar links -->
+    <ul class="navbar-nav ml-auto">
+        <!-- Users -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Users
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{{ path('admin_users_index') }}">List Users</a>
+                <a class="dropdown-item" href="{{ path('admin_index') }}">Edit Users</a>
+            </div>
+        </li>
+
+      
+
+        <!-- Products -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Products
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{{ path('admin_products_index') }}">List Products</a>
+                <a class="dropdown-item" href="{{ path('admin_products_add') }}">Add Product</a>
+            </div>
+        </li>
+
+        <!-- Shops -->
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="{{ path('admin_shop_add') }}">Add Shop</a>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Search Results{% endblock %}
+
+{% block body %}
+    <div class="container-fluid mt-4 mb-5">
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                {% include "_partials/_btn_go_back.html.twig" %}
+
+                <h2>Search Results for "{{ query }}"</h2>
+
+                <!-- Affichage des produits trouvés -->
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center m-3">
+                    {% for product in products %}
+                        <div class="col-md-4 mb-4">
+                            <!-- Contenu de la carte de produit -->
+                            <div class="card h-100 mb-4 product-wap rounded-0 mt-2 m-auto">
+                                <div class="card rounded-0">
+                                    <!-- Image du produit -->
+                                    <img src="{{ asset('assets/uploads/products/mini/' ~ product.image) }}" class="d-block w-100 img-fluid h-100" alt="{{ product.name }}">
+                                    <!-- Autres détails du produit -->
+                                    <div class="card-body">
+                                        <a href="{{ path('products_details', {'id': product.id}) }}" class="fs-5 text-decoration-none">{{ product.name }}</a>
+                                        <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                                            <li>
+                                                <div class="small-bold mb-1">{{ product.subcategories }}</div>
+                                                {% if product.isProductNew() %}
+                                                    <span class="badge bg-danger big">New</span>
+                                                {% endif %}
+                                            </li>
+                                        </ul>
+                                        <!-- Évaluation du produit -->
+                                        <ul class="list-unstyled d-flex justify-content-center mb-1">
+                                            <li>
+                                                <i class="text-warning fa fa-star"></i>
+                                                <i class="text-warning fa fa-star"></i>
+                                                <i class="text-warning fa fa-star"></i>
+                                                <i class="text-muted fa fa-star"></i>
+                                                <i class="text-muted fa fa-star"></i>
+                                            </li>
+                                        </ul>
+                                        <!-- Prix du produit -->
+                                        <p class="text-center mb-0">{{ product.price }} $</p>
+                                    </div>
+                                    <!-- Actions sur le produit -->
+                                    <div class="text-center">
+                                        <div class="card-footer mr-3 p-3 pt-0 border-top-0 bg-transparent">
+                                            {% if product.stock > 0 %}
+                                                <a class="btn btn-success btn-cart" href="{{ path('cart_add', {'id': product.id}) }}">Add To Cart</a>
+                                            {% else %}
+                                                <p class="text text-danger">Out Of Stock</p>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}

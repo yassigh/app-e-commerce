@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Users Administration{% endblock %}
+
+{% block body %}
+{% include '_partials/_admin.html.twig' %}
+     <h1>Users Administration</h1>
+       <ul>
+        {% for user in users %}
+            <li>{{ user.getFirstname() }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Shop Administration{% endblock %}
+
+{% block body %}
+     <h1>Shop Administration</h1>
+       <div class="row">
+         {% for shop in shops %}
+            <div class="col-12 col-md-4 p-5 mt-3">
+
+              <div>
+    {% if shop.imageFileNameShop is not null %}
+        <a href="#"><img src="{{ asset('assets/uploads/shop/' ~ shop.imageFileNameShop) }}" class="rounded-circle img-fluid border"></a>
+    {% else %}
+        <p>No picture available</p>
+    {% endif %}
+</div>
+                <h5 class="text-center mt-3 mb-3">{{shop.name}}</h5>
+                <p class="text-center"> <a class="btn btn-info" href="{{ path('app_shop', {'id': shop.getId()}) }}">Go Shop</a>
+</p></p>
+            </div>
+            {% endfor %}
+           
+        </div>
+    
+{% endblock %}
