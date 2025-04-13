@@ -1,26 +1,29 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.1.1">
   <diagram name="Page-1" id="UD9ssnB25V0wR8lebDyP">
-    <mxGraphModel dx="750" dy="495" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1150" dy="490" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="nowOQ26C92a0yXKZQAn0-2" value="Frontend" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
-          <mxGeometry x="364" y="869" width="100" height="481" as="geometry" />
+          <mxGeometry x="303" y="869" width="100" height="481" as="geometry" />
         </mxCell>
         <mxCell id="nowOQ26C92a0yXKZQAn0-3" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" vertex="1" parent="1">
-          <mxGeometry x="180" y="880" width="20" height="480" as="geometry" />
+          <mxGeometry x="180" y="870" width="20" height="480" as="geometry" />
         </mxCell>
-        <mxCell id="nowOQ26C92a0yXKZQAn0-4" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;" edge="1" parent="1" target="nowOQ26C92a0yXKZQAn0-2">
+        <mxCell id="nowOQ26C92a0yXKZQAn0-4" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;entryX=0.923;entryY=0.976;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="nowOQ26C92a0yXKZQAn0-5">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="190" y="960" as="sourcePoint" />
             <mxPoint x="350" y="960" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="280" y="960" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="nowOQ26C92a0yXKZQAn0-5" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;Soumettre une nouvelle réservation&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="185" y="930" width="230" height="30" as="geometry" />
+        <mxCell id="nowOQ26C92a0yXKZQAn0-5" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Soumettre une nouvelle réservation&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="184" y="930" width="180" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="nowOQ26C92a0yXKZQAn0-6" value="2.Affichage du Formulaire" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="240" y="990" width="160" height="40" as="geometry" />
+        <mxCell id="nowOQ26C92a0yXKZQAn0-6" value="valider les données" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="600" y="980" width="90" height="40" as="geometry" />
         </mxCell>
         <mxCell id="nowOQ26C92a0yXKZQAn0-7" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;" edge="1" parent="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -28,21 +31,21 @@
             <mxPoint x="188" y="1020" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nowOQ26C92a0yXKZQAn0-8" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;" edge="1" parent="1">
+        <mxCell id="nowOQ26C92a0yXKZQAn0-8" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;" edge="1" parent="1" target="nowOQ26C92a0yXKZQAn0-20">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="188" y="1080" as="sourcePoint" />
-            <mxPoint x="412" y="1080" as="targetPoint" />
+            <mxPoint x="518" y="1060" as="sourcePoint" />
+            <mxPoint x="742" y="1060" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nowOQ26C92a0yXKZQAn0-9" value="3.Envoi des Identifiants" style="text;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="240" y="1050" width="150" height="40" as="geometry" />
+        <mxCell id="nowOQ26C92a0yXKZQAn0-9" value="Créer une nouvelle réservation" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="530" y="1030" width="200" height="40" as="geometry" />
         </mxCell>
         <mxCell id="nowOQ26C92a0yXKZQAn0-10" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;edgeStyle=elbowEdgeStyle;" edge="1" parent="1">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="424" y="1130" as="sourcePoint" />
-            <mxPoint x="407.5" y="1150" as="targetPoint" />
+            <mxPoint x="536.5" y="990" as="sourcePoint" />
+            <mxPoint x="520" y="1010" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="480" y="1130" />
+              <mxPoint x="592.5" y="990" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -66,6 +69,24 @@
         </mxCell>
         <mxCell id="nowOQ26C92a0yXKZQAn0-15" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;[ Auth= False]&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="170" y="1171" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nowOQ26C92a0yXKZQAn0-16" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;ReservationController&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="470" y="869" width="100" height="481" as="geometry" />
+        </mxCell>
+        <mxCell id="nowOQ26C92a0yXKZQAn0-17" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=12;curved=1;entryX=0.98;entryY=0.958;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="350" y="970" as="sourcePoint" />
+            <mxPoint x="521.4000000000001" y="968.74" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nowOQ26C92a0yXKZQAn0-18" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Appel a la reservation avec donnée&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="350" y="940" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nowOQ26C92a0yXKZQAn0-19" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Utilisateur&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="900" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nowOQ26C92a0yXKZQAn0-20" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;ReservationModel&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="630" y="870" width="100" height="481" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
