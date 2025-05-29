@@ -326,6 +326,12 @@
         <mxCell id="aByY1DoplT65pxPdlUXJ-8" value="Gérer le profil" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="230" y="1070" width="380" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="aByY1DoplT65pxPdlUXJ-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;startFill=0;" edge="1" parent="1" target="jzeLIzc8eokm52Ixfp3x-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="400" as="sourcePoint" />
+            <mxPoint x="360" y="808" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
